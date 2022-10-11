@@ -1,0 +1,85 @@
+html, body, main, nav{ height: 100%; width: 100%; margin: 0; }
+
+header{
+    height: 13%;
+}
+
+
+#navbarSupportedContent {
+    flex-grow: 0;
+    --bs-navbar-color: white;
+    --bs-navbar-hover-color: red;
+
+}
+
+.navbar-nav {
+    gap: 10%;
+    width: 100%;
+
+}
+
+.homePic {
+    background-image: linear-gradient(to top , rgba(0,0,0,943) 25%, rgba(0,0,0,0.5) 70%, rgba(0,0,0,0.2) 100%);
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.textArea {
+    z-index: 1;
+    height: auto;
+    width: 100%;
+    background-color: rgba(0,0,0,0.943);
+    margin-left: 7%;
+    
+    
+}
+
+.indexImg {
+    width: 100%;
+    height: auto;
+    position: relative;
+    z-index: -1;
+}
+
+.nav-item {
+    font-weight: bold;
+    font-size: x-large;
+    width: 100%;
+}
+
+.dropdown-menu {
+    flex-flow: row;
+    justify-content: center;
+    grid-gap: 45px;
+    gap: 45px;
+    padding-bottom: 6rem;
+}
+
+
+.dropdown-menu {
+    display: flex;
+    flex-direction: column;
+    margin-top: 13%;
+    box-sizing: border-box;
+    position: relative;
+    justify-content: start;
+    
+}
+
+.picCaption {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    top: 70%;
+    position: absolute;
+    margin-left: 7%;
+    
+}
+
+.quote {
+    margin-top: 0;
+    width: 50%;
+    font-size: xx-large;
+    
+}
