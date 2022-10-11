@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+
 <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="./index.css">
     <title>Porsche experience</title>
 
@@ -10,78 +11,67 @@
     
    
 </head>
-<header>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
 
-    <nav class="navbar navbar-expand-lg bg-black" style="--mdb-bg-opacity: 0.943">
-        <div class="container-fluid justify-content-around">
-          <a class="navbar-brand" href="#"><img src="./logo.svg"></a>
-          <div class="collapse navbar-collapse text-white" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0 justify-content-end">
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Track
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+<!--header-->
+<header>
+
+  <div class = "main-wrapper">
+    <nav class = "navbar">
+      <div class = "brand-and-icon">
+        <img src="./logo.svg" style="background-color: black;"/>
+      </div>
+
+      <div class = "navbar-collapse">
+        <ul class = "navbar-nav">
+
+          <li>
+            <a href = "#" class = "menu-link">
+              electronics
+              
+            </a>
+            <div class = "sub-menu">
+              <!-- item -->
+              <div class = "sub-menu-item">
+                <h4>top categories</h4>
+                <ul>
+                  <li><a href = "#">cell phones & accessories</a></li>
+                  <li><a href = "#">smart tv</a></li>
+                  <li><a href = "#">computer & laptops</a></li>
+                  <li><a href = "#">digital cameras</a></li>
+                  <li><a href = "#">video games & accessories</a></li>
                 </ul>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Travel
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </div>
+              <!-- end of item -->
+              <!-- item -->
+              <div class = "sub-menu-item">
+                <h4>other categories</h4>
+                <ul>
+                  <li><a href = "#">iphones</a></li>
+                  <li><a href = "#">speakers</a></li>
+                  <li><a href = "#">samsung devices</a></li>
+                  <li><a href = "#">audio & headphones</a></li>
+                  <li><a href = "#">vehicles electronics & GPS</a></li>
                 </ul>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Ice
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  More
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Contact
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-        
-        
+              </div>
+              <!-- end of item -->
+              <!-- item -->
+
+          
+            </div>
+          </li>
+
+        </ul>
+      </div>
+    </nav>
+  </div>
+
+
+
+  
 </header>
+
+
+<!--body-->
 <body class="text-white bg-black" style="--mdb-bg-opacity: 0.943">
   
     <main>
@@ -89,7 +79,7 @@
           <img class="indexImg bg-dark bg-gradient" src="./homepic.jpeg" alt="home picture"/>
           <div class="text-white picCaption">
             <h2 >Porsche Experience</h2>
-            <p style="font-size: larger;">Make it Yours.</p>
+            <p>Make it Yours.</p>
         </div>
          </div>
         <div class="textArea">
@@ -99,16 +89,14 @@
           <section class="container">
               <h2>Recent Event Highlights</h2>
               <div class="row">
-                <div class="col-md-4">Ice Experience. Keeping a cool head. Despite hot drifts.Some feelings just cannot be described. Only felt yourself. Like the first controlled drift on snow and ice. In a Porsche. An unforgettably intense emotion. This awaits you in the Ice Experience training level with every single curve. After all, exhilaration and thrills are your constant companions on the mirror-smooth ice tracks.
-                  <img class="firstPic" src="/firstPic.jpeg"/>
+                <div class="col-md-4"><img class="firstPic" src="/firstPic.jpeg"/><br>Ice Experience. Keeping a cool head. Despite hot drifts.Some feelings just cannot be described. Only felt yourself. Like the first controlled drift on snow and ice. In a Porsche. An unforgettably intense emotion. This awaits you in the Ice Experience training level with every single curve. After all, exhilaration and thrills are your constant companions on the mirror-smooth ice tracks.
                 </div>
-                <div class="col-md-4">Ice Experience. Keeping a cool head. Despite hot drifts.Some feelings just cannot be described. Only felt yourself. Like the first controlled drift on snow and ice. In a Porsche. An unforgettably intense emotion. This awaits you in the Ice Experience training level with every single curve. After all, exhilaration and thrills are your constant companions on the mirror-smooth ice tracks.
-                  <img class="firstPic" src="/firstPic.jpeg"/>
+                <div class="col-md-4"><img class="firstPic" src="/firstPic.jpeg"/><br>Ice Experience. Keeping a cool head. Despite hot drifts.Some feelings just cannot be described. Only felt yourself. Like the first controlled drift on snow and ice. In a Porsche. An unforgettably intense emotion. This awaits you in the Ice Experience training level with every single curve. After all, exhilaration and thrills are your constant companions on the mirror-smooth ice tracks.
                 </div>
-                <div class="col-md-4">Ice Experience. Keeping a cool head. Despite hot drifts.Some feelings just cannot be described. Only felt yourself. Like the first controlled drift on snow and ice. In a Porsche. An unforgettably intense emotion. This awaits you in the Ice Experience training level with every single curve. After all, exhilaration and thrills are your constant companions on the mirror-smooth ice tracks.
-                  <img class="firstPic" src="/firstPic.jpeg"/>
+                <div class="col-md-4"><img class="firstPic" src="/firstPic.jpeg"/><br>Ice Experience. Keeping a cool head. Despite hot drifts.Some feelings just cannot be described. Only felt yourself. Like the first controlled drift on snow and ice. In a Porsche. An unforgettably intense emotion. This awaits you in the Ice Experience training level with every single curve. After all, exhilaration and thrills are your constant companions on the mirror-smooth ice tracks.
                 </div>
           </section>
+          <img class="firstPic" src="/firstPic.jpeg"/>
         </div>
         
         
