@@ -30,7 +30,7 @@ header{
     height: auto;
     width: 100%;
     background-color: rgba(0,0,0,0.943);
-    margin-left: 7%;
+    
     
     
 }
@@ -78,8 +78,23 @@ header{
 }
 
 .quote {
-    margin-top: 0;
     width: 50%;
     font-size: xx-large;
-    
+    margin-left: 7%;
+}
+
+section {
+    box-sizing: border-box;
+}
+
+.row {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.firstPic{
+    width: 100%;
+    height: auto;
 }
