@@ -115,11 +115,12 @@ h5 {
 
 /*header*/
 .homePic {
-    background-image: linear-gradient(-180deg,rgba(14,20,24,0) 0%,#0e1418 100%);
+    background-image: linear-gradient(-180deg,rgba(0, 0, 0, 0) 0%,#000000 100%);
     width: 100%;
     height: 100%;
     box-sizing: border-box;
     position: relative;
+    font-weight: bold;
     
 }
 
@@ -138,7 +139,7 @@ h5 {
 }
 .homePic .picCaption{
     position: absolute; 
-    top: 65%;
+    top: 70%;
     z-index: 1;
 }
 
@@ -148,14 +149,19 @@ h5 {
 }
 
 .picCaption {
-    margin-left: 7%;
-    
+    margin-left: 7%; 
+}
+
+.picCaption > h2 {
+    font-weight: bolder;
 }
 
 .quote {
     width: 50%;
     font-size: xx-large;
     margin-left: 7%;
+    margin-bottom: 3%;
+    font-weight: bold;
 }
 
 section {
@@ -168,19 +174,89 @@ section {
     width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-around;
 }
 
 .firstPic{
-    width: 33%;
+    width: 100%;
     height: auto;
 }
 
-p {
-    margin-top: 0;
-    font-size: larger;
+.secondPic {
+    width: 100%;
+    height: auto;
+}
+
+.thirdPic {
+    width: 100%;
+    height: auto;
 }
 
 .ml-1 {
-    margin-left: 7% !important;
-  }
+    margin-left: 7%;
+    margin-right: 7%;
+}
+
+.ml-1 > h2 {
+    font-weight: bolder;
+    margin-bottom: 4%;
+}
+
+.col-md-4 {
+    text-align: justify;
+}
+
+.colHeader {
+    text-align: center;
+    font-weight: bold;
+}
+
+.colContent {
+    padding-top: 0.1%;
+    padding-bottom: 2%;
+    color: rgb(151, 154, 151);
+}
+
+.colLink {
+    text-decoration: none;
+    width: 100%;
+    font-size: large;
+
+}
+
+.colLink > a:hover {
+    color: red;
+}
+
+.colLink > a {
+    color: white;
+    text-decoration: none;
+    font-weight: normal;
+    margin-left: 1%;
+}
+
+.arrow {
+    border: solid rgb(255, 255, 255);
+    border-width: 0 1px 1px 0;
+    display: inline-block;
+    padding: 4px;
+    transform: rotate(-90deg);
+    -webkit-transform: rotate(-45deg);
+}
+
+.col-md-4:hover{
+    cursor: pointer;
+}
+
+.col-md-4:hover .colLink > a {
+    color: red;
+}
+
+.col-md-4:hover .colLink > i {
+    border: solid red;
+    border-width: 0 1px 1px 0;
+    display: inline-block;
+    padding: 4px;
+    transform: rotate(-90deg);
+    -webkit-transform: rotate(-45deg);
+} 
