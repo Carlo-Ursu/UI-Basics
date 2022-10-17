@@ -35,16 +35,19 @@ header {
     width: 100%;
     display: flex; 
     justify-content: flex-end;
-    padding-right: 20%;
-    gap: 5%;
     height: 100%;
-    text-align: center;
-    height: 10vh;
-    font-size: 10vh;
-    line-height: 10vh;
 }
 
-
+.dropdownWrapper {
+    padding-right: 20%;
+    text-align: center;
+    height: 100%;
+    display: flex;
+    gap: 5%;
+    height: 10vh;
+    font-size: 10vh;
+    line-height: 8vh;
+}
 
 .navbarNav {
     width: 100%;
@@ -60,22 +63,13 @@ ul {
     padding: 0;
 }
 
-.navbar ul:after { 
-    content: "";
-    clear: both;
-    display: block;
-}
-
 .dropdownMenu {
     font-weight: bold;
     font-size: x-large;
     padding-left: 20px;
+    
 }
 
-.dropdownMenu:before {
-    content: "";
-    display: inline-block;
-}
 
 .subMenu {
     position: absolute;
@@ -100,7 +94,7 @@ h5 {
     padding-left: 0px;
 }
 
-.navbar > ul > div > li:hover > .subMenu ,.subMenu:hover{
+.navbar > ul > div > div > li:hover > .subMenu ,.subMenu:hover{
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -111,11 +105,11 @@ h5 {
     font-size: small;
 }
 
-.navbar > ul > div > li:hover > .subMenu > .subMenuItem > ul > li > a:hover {
+.navbar > ul > div > div > li:hover > .subMenu > .subMenuItem > ul > li > a:hover {
     color: red;
 }
 
-.navbar > ul > div > li:hover > .subMenu > .subMenuItem > ul > li > a {
+.navbar > ul > div > div > li:hover > .subMenu > .subMenuItem > ul > li > a {
     color: white;
     text-decoration: none;
     font-weight: normal;
@@ -343,17 +337,20 @@ footer {
 
 .languageWrapper .options {
     position: absolute;
-    padding-top: 23%;
+    margin-top: 20%;
     overflow: hidden;
     width: 75%;
     display: none;
     border: 1px solid white;
     padding-left: 4%;
+    background-color: #000000;
+    
    
 }
 
 .languageWrapper.active .options {
     display: block;
+    
 }
 
 .languageWrapper .options div{
@@ -363,7 +360,7 @@ footer {
 
 .languageWrapper .options div:hover{
     color: red; 
-    background-color: rgba(69, 78, 69, 0.305) 
+    background-color: rgba(78, 76, 76, 0);
 }
 
 .languageWrapper::before {
@@ -406,16 +403,21 @@ label {
 .lowerFooterText {
     padding-top: 2%;
     display: flex;
+    flex-direction: row;
+    gap: 10%;
 }
 
 .leftSide {
-    width: 20%;
+    width: 25%;
 }
 
 .rightSide {
-    width: 80%;
+    width: 100%;
     display: flex;
     justify-content: end;
+    flex-wrap: wrap;
+    font-size: x-small;
+    gap: 2%;
 
 }
 
@@ -429,4 +431,196 @@ label {
     cursor: pointer;
 }
 
+
+
 /*footer*/
+
+/*media-queries*/
+
+
+
+@media only screen and (max-width: 1360px){
+    .leftSide {
+        width: 40%;
+    }
+}
+
+@media only screen and (max-width: 1300px){
+    .logoFooter{
+        width: 90%;
+    }
+    
+    .rowFooter {
+        display: flex;
+        flex-direction: column;
+        width: 2000px;
+    }
+    .languageWrapper {
+        margin-bottom: 5%;
+        width: 40%;
+    }
+    .logoFooter {
+        width: 40%;
+    }
+}
+
+@media only screen and (max-width: 1130px)
+
+{
+    .rightSide {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+    .logoFooter {
+        width: 70%;
+    }
+    .languageWrapper {
+        width: 50%;
+    }
+    .logoFooter {
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 1050px) {
+    .quote {
+        padding-top: 3%;
+        width: 70%;
+    }
+
+    label {
+        margin-top: 5%;
+    }
+
+    .languageWrapper {
+        margin-bottom: 5%;
+        width: 50%;
+    }
+    .logoFooter {
+        width: 50%;
+    }
+
+}
+
+@media only screen and (max-width: 960px){
+    .leftSide {
+        width: 50%;
+    }
+
+    .rowFooter {
+        display: flex;
+        flex-direction: column;
+        width: 1450px;
+    }
+    .logoFooter {
+        width: 70%;
+    }
+}
+@media only screen and (max-width: 900px) {
+    .lowerFooterText {
+        display: block;
+    }
+    
+    .rightSide {
+        width: 100%;
+    }
+
+    .rowFooter {
+        display: flex;
+        flex-direction: column;
+        width: 1400px;
+    }
+}  
+@media only screen and (max-width: 830px) {
+    .lowerFooterText {
+        display: block;
+    }
+    
+    .rightSide {
+        width: 100%;
+    }
+
+    .rowFooter {
+        display: flex;
+        flex-direction: column;
+        width: 1300px;
+    }
+    .logoFooter {
+        width: 70%;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .menuWrapper{
+        cursor: pointer;
+    }
+    
+    .dropdownWrapper { 
+        display: none   ;
+        margin-top: 20%;
+        padding-right: 3%;
+        text-align: right;
+        z-index: 2;
+    }
+
+    .dropdownMenu {
+        line-height: 5vh;
+    }
+    .menuWrapper::before{
+        position: absolute;
+        content: '';
+        cursor: pointer;
+        border: solid rgb(255, 255, 255);
+        border-width: 0 10px 10px 0;
+        top: 20%;
+        display: inline-block;
+        right: 5%;
+        -webkit-transform: rotate(45deg);
+        transition: 0.3s;
+        z-index: 10000;
+    }
+
+    .navbar > ul > div > div > li:hover > .subMenu{
+        display: block;
+        width: 80%;
+       
+    }
+       
+    .navbar ul li:hover {
+        color: red;
+        cursor: pointer;
+    }
+    
+    .menuWrapper.active .dropdownWrapper {
+        display: block;
+    }
+
+    .quote {
+        width: 85%;
+    }
+
+    label {
+        margin-top: 5%;
+    }
+    
+    .logo_language {
+        margin-bottom: 12%;
+    }
+
+    .languageWrapper {
+        width: 100%;
+        margin-bottom: 15%;
+    }
+
+    .rowFooter {
+        width: 850px;
+    }
+    .logoFooter {
+        width: 80%;
+    }
+
+}
+
+
+/*media-queries*/
