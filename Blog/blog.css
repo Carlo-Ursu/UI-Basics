@@ -121,8 +121,9 @@ h5 {
 /*main*/
 
 main {
-    padding-left: 7%;
-    padding-right: 7%;
+
+
+    padding: 5% 7% 5% 7%;
 }
 
 
@@ -407,10 +408,11 @@ label {
     
     .dropdownWrapper { 
         display: none   ;
-        margin-top: 20%;
+        margin-top: 10%;
         padding-right: 3%;
         text-align: right;
         z-index: 2;
+        
     }
 
     .dropdownMenu {
