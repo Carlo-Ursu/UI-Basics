@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./quiz.css">
+  <title>My quiz</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+
+</head>
+
+
+
+
+
+<body class="text-white bg-black">
+
+  <!--header-->
+  <header>
+
+    <div class="headerWrapper bg-black">
+
+      <nav class="navbar">
+
+        <ul class="navbarNav text-white">
+          <li class="logo"><a href="../index.html"><img src="../logo.svg" /></a></li>
+          <div class="menuWrapper" onclick="showMenu()">
+            <div class="dropdownWrapper">
+              <li class="dropdownMenu">
+                Blog
+                <div class="subMenu">
+                  <!-- item -->
+                  <div class="subMenuItem">
+                    <h5 class="text-white">Blog Page</h5>
+                    <ul class="links">
+                      <li><a href="../Blog/blog.html">Link to Blog Page</a></li>
+                    </ul>
+                  </div>
+                  <!-- end of item -->
+                  <!-- item -->
+                </div>
+              </li>
+              <li class="dropdownMenu">
+                Quiz
+                <div class="subMenu">
+                  <!-- item -->
+                  <div class="subMenuItem">
+                    <h5 class="text-white">Quiz Page</h5>
+                    <ul class="links">
+                      <li><a href="./quiz.html">Link to Quiz Page</a></li>
+                    </ul>
+                  </div>
+                  <!-- end of item -->
+                  <!-- item -->
+                </div>
+              </li>
+              <li class="dropdownMenu">
+                Analytics
+                <div class="subMenu">
+                  <!-- item -->
+                  <div class="subMenuItem">
+                    <h5 class="text-white">Analytics Page</h5>
+                    <ul class="links">
+                      <li><a href="../Analytics/analytics.html">Link to Analytics Page</a></li>
+                    </ul>
+                  </div>
+                  <!-- end of item -->
+                  <!-- item -->
+                </div>
+              </li>
+            </div>
+          </div>
+        </ul>
+      </nav>
+    </div>
+
+
+
+
+  </header>
+
+
+  <!--main-->
+  <main class="bg-black">
+
+    <form>
+
+      <section id="dataFromBlog">
+        <h3>First section</h3>
+      </section>
+      <section id="checkbox">
+        <h3>Checkbox section</h3>
+        <input type="checkbox" value="Option 1">Option 1<br>
+        <input type="checkbox" value="Option 2" checked>Option 2<br>
+        <input type="checkbox" value="Option 3">Option 3<br>
+      </section>
+      <section>
+        <h3>Select section</h3>
+        <select id="selectId">
+          <option selected value="1">Option 1</option>
+          <option value="2">Option 2</option>
+          <option value="3">Option 3</option>
+        </select>
+      </section>
+      <section id="pdfFile">
+        <h3>Insert PDF section</h3>
+        <input type="file" id="pdfFile" accept=".pdf" />
+      </section>
+      <section id="numberChoice">
+        <h3>Number section</h3>
+        <input type="number" step="5" min="20" max="45" required/>
+      </section>
+      <section id="inputText">
+        <h3>Input text</h3>
+        <input type="text" required/>
+      </section>
+
+      <button type="submit" onclick="saveData()">Submit form</button>
+    </form>
+
+
+  </main>
+  <!--main-->
+
+  <!--footer-->
+  <!--footer-->
+  <footer class="bg-black">
+
+    <div class="bg-black ml-2">
+      <div class="row rowFooter">
+        <div class="col-3 logo-language">
+          <div class="logo_language">
+            <img class="logoFooter" src="../logo.svg" />
+            <label for="languageWrapper">
+              Change language
+            </label>
+            <div class="languageWrapper">
+              <input type="text" class="textBox" placeholder="English" readonly />
+              <div class="options">
+                <div onclick="showLanguage('English')">English</div>
+                <div onclick="showLanguage('Romanian')">Romanian</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-3 info">
+          <p class="title">Tour Operator</p>
+          <address>
+            Porsche experience<br>
+            operated by SPORTTOTAL EVENT GmbH<br>
+            Stammheimer Straße 31<br>
+            70435 Stuttgart, Germany<br>
+            Telephone:+49 (0) 711 508 705 39<br>
+            Fax:+49 (0) 711 508 705 99<br>
+            E-mail: info.porscheexperience@sporttotal.com<br>
+          </address>
+        </div>
+        <div class="col-6 explanations">
+          <p>* The figures stated were determined according to the measuring method (in the amended § 2 Nos. 5, 6, 6a
+            Pkw-EnVKV). The figures do not refer to a specific vehicle and are not part of the offer but are purely for
+            comparison purposes between the various types of vehicles. For more current information on individual
+            models, please contact your Porsche Centre / dealer. Determination of consumption on the basis of standard
+            equipment. Special equipment may affect fuel consumption and performance.
+          </p>
+          <p>The fuel consumption and CO2 emissions of a vehicle not only depend on the efficient utilization of the
+            fuel by the vehicle, but are also influenced by driving behavior and other non-technical factors. CO2 is the
+            main greenhouse gas responsible for global.
+          </p>
+          <p>Further information on official fuel consumption and official specific CO2 emissions for new passenger cars
+            in the "Guidelines for Fuel consumption, CO2 emissions and energy consumption Of new passenger cars" are
+            taken, which is available free of charge at all sales outlets and at DAT.
+          </p>
+        </div>
+      </div>
+      <div class="lowerFooter">
+        <div class="lowerFooterText">
+          <div class="leftSide">
+            <p>©<span id="year"></span> SPORTTOTAL EVENT GmbH.</p>
+          </div>
+          <div class="rightSide">
+            <p>OPEN SOURCE SOFTWARE NOTICE
+              <a href="https://experience.porsche.com/Open-Source-Software-Notice"></a>
+            </p>
+            <p>LEGAL NOTICE
+              <a href="https://experience.porsche.com/legal-notice"></a>
+            </p>
+            <p>PRIVACY POLICY
+              <a href="https://experience.porsche.com/Privacy-Policy"></a>
+            </p>
+            <p>COOKIE POLICY
+              <a href="https://experience.porsche.com/Cookie-Policy"></a>
+            </p>
+            <p>FUEL CONSUMPTION<a href="https://www.porsche.com/germany/verbrauchsinformationen/"></a>
+            </p>
+            <p>DAT
+              <a href="https://www.datgroup.com/"></a>
+            </p>
+            <p>TERMS AND CONDITIONS
+              <a href="https://experience.porsche.com/Terms-and-Conditions"></a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+  </footer>
+  <!--footer-->
+
+</body>
+<script src="../index.js"></script>
+<script src="./quiz.js"></script>
+
+
+
+
+</html>

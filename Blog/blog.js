@@ -63,6 +63,8 @@ function ChangeBgOnMouseout(x) {
 displayData();
 
 
+
+
 // Test if they are in local storage after modifications //
 /* 
 var retrievedObject = localStorage.getItem('orderedArray');
