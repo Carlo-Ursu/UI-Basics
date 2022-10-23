@@ -92,31 +92,31 @@
       <section id="dataFromBlog">
         <h3>First section</h3>
       </section>
-      <section id="checkbox">
+      <section>
         <h3>Checkbox section</h3>
-        <input type="checkbox" value="Option 1">Option 1<br>
-        <input type="checkbox" value="Option 2" checked>Option 2<br>
-        <input type="checkbox" value="Option 3">Option 3<br>
+        <input type="checkbox" value="Option 1" name="check">Option 1<br>
+        <input type="checkbox" value="Option 2" name="check" checked>Option 2<br>
+        <input type="checkbox" value="Option 3" name="check">Option 3<br>
       </section>
       <section>
         <h3>Select section</h3>
         <select id="selectId">
-          <option selected value="1">Option 1</option>
-          <option value="2">Option 2</option>
-          <option value="3">Option 3</option>
+          <option selected value="1" name="selects">Option 1</option>
+          <option value="2" name="selects">Option 2</option>
+          <option value="3" name="selects">Option 3</option>
         </select>
       </section>
-      <section id="pdfFile">
+      <section>
         <h3>Insert PDF section</h3>
         <input type="file" id="pdfFile" accept=".pdf" />
       </section>
-      <section id="numberChoice">
+      <section>
         <h3>Number section</h3>
-        <input type="number" step="5" min="20" max="45" required/>
+        <input id="numberChoice" type="number" step="5" min="20" max="45" required />
       </section>
-      <section id="inputText">
+      <section>
         <h3>Input text</h3>
-        <input type="text" required/>
+        <input id="inputText" type="text" required />
       </section>
 
       <button type="submit" onclick="saveData()">Submit form</button>

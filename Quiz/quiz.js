@@ -7,34 +7,53 @@ for (var i = 0; i < retrievedObject.length; i++) {
     let title = retrievedObject[i].title;
     var option = "";
     console.log()
-    option += "<input type='radio' id='" + i + "' onclick='toggleCheck(" + i + ")' value='" +
-        title + "'>" +
+    option += "<input type='radio' name='pick' id='" + i + "' onclick='onlyOneRadio(this)' value='" +
+        title + "'/>" +
         title + "<br>";
     formBody.innerHTML += option;
 }
 
-
-let checkbox = document.getElementById("checkbox");
-let selectId = document.getElementById("selectId");
-let dataFromBlog = document.getElementById("dataFromBlog");
-let pdfFile = document.getElementById("pdfFile");
-let numberChoice = document.getElementById("numberChoice");
-let inputText = document.getElementById("inputText");
-
-
-/*function saveData() {
-    alert(inputText.value);
-    alert(selectId.value);
-    alert(dataFromBlog.value);
-    alert(pdfFile.value);
-    alert(numberChoice.value);
-    alert(inputText.value);
-}*/
-
-function toggleCheck(x) {
-    let toggleButton = document.getElementById(x);
-    toggleButton.checked = true;
-    if (toggleButton.checked = true) toggleButton.checked = false;
-    console.log(toggleButton.checked);
+function onlyOneRadio(radiobox) {
+    var radios = document.getElementsByName('pick')
+    radios.forEach((item) => {
+        if (item !== radiobox) item.checked = false;
+    })
 }
+
+function saveData() {
+    let radioboxChoice;
+    let radiobox = document.getElementsByName('pick');
+    for (let i = 0; i < radiobox.length; i++)
+        if (radiobox[i].checked) radioboxChoice = radiobox[i].value;
+    localStorage.setItem('radioboxChoice', radioboxChoice);
+
+    let checkboxChoices = [];
+    let checkbox = document.getElementsByName('check');
+    for (let i = 0; i < checkbox.length; i++)
+        if (checkbox[i].checked) checkboxChoices.push(checkbox[i].value);
+    localStorage.setItem('checkboxChoices', checkboxChoices);
+
+    let selectChoice;
+    let select = document.getElementsByName('selects');
+    for (let i = 0; i < select.length; i++)
+        if (select[i].selected) selectChoice = select[i].value;
+    localStorage.setItem('selectChoice', selectChoice);
+
+
+    let file = document.getElementById('pdfFile');
+    if (file.files.length === 1) localStorage.setItem('nameOfFile', file.files.item(0).name);
+
+    let numberChoice = document.getElementById('numberChoice').value;
+    localStorage.setItem('numberChoice', numberChoice);
+
+    let inputText = document.getElementById('inputText').value.trim();
+    localStorage.setItem('inputText', inputText);
+
+    let date = new Date().getTime();
+    localStorage.setItem('submitDate', date);
+}
+
+
+
+
 
