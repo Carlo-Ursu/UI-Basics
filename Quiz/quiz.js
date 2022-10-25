@@ -42,6 +42,7 @@ function saveData() {
 
     let file = document.getElementById('pdfFile');
     if (file.files.length === 1) localStorage.setItem('nameOfFile', file.files.item(0).name);
+    else localStorage.setItem('nameOfFile', undefined);
 
     let numberChoice = document.getElementById('numberChoice').value;
     localStorage.setItem('numberChoice', numberChoice);
@@ -51,7 +52,11 @@ function saveData() {
 
     let date = new Date().getTime();
     localStorage.setItem('submitDate', date);
+
 }
+
+
+
 
 
 

@@ -408,7 +408,7 @@ label {
     
     .dropdownWrapper { 
         display: none   ;
-        margin-top: 10%;
+        margin-top: 20%;
         padding-right: 3%;
         text-align: right;
         z-index: 2;
