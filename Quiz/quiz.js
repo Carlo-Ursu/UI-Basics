@@ -20,6 +20,7 @@ function onlyOneRadio(radiobox) {
     })
 }
 
+
 function saveData() {
     let radioboxChoice;
     let radiobox = document.getElementsByName('pick');
@@ -53,10 +54,18 @@ function saveData() {
     let date = new Date().getTime();
     localStorage.setItem('submitDate', date);
 
+    alert("Your form was submitted!!!");
 }
 
-
-
+submitForm.addEventListener("click", function(e){
+    let numberChoice = document.getElementById('numberChoice').value;
+    let inputText = document.getElementById('inputText').value.trim();
+    if(inputText === "" || numberChoice === ""){
+        e.preventDefault();
+        alert("Text and number inputs HAVE to be inserted");
+    }
+    else saveData();
+})
 
 
 

@@ -9,7 +9,9 @@
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
 
 </head>
 
@@ -27,51 +29,14 @@
       <nav class="navbar">
 
         <ul class="navbarNav text-white">
-          <li class="logo"><a href="../index.html"><img src="../logo.svg" /></a></li>
+          <li class="logo">
+            <h2><a href="../index.html">1UI</a></h2>
+          </li>
           <div class="menuWrapper" onclick="showMenu()">
-            <div class="dropdownWrapper">
-              <li class="dropdownMenu">
-                Blog
-                <div class="subMenu">
-                  <!-- item -->
-                  <div class="subMenuItem">
-                    <h5 class="text-white">Blog Page</h5>
-                    <ul class="links">
-                      <li><a href="../Blog/blog.html">Link to Blog Page</a></li>
-                    </ul>
-                  </div>
-                  <!-- end of item -->
-                  <!-- item -->
-                </div>
-              </li>
-              <li class="dropdownMenu">
-                Quiz
-                <div class="subMenu">
-                  <!-- item -->
-                  <div class="subMenuItem">
-                    <h5 class="text-white">Quiz Page</h5>
-                    <ul class="links">
-                      <li><a href="./quiz.html">Link to Quiz Page</a></li>
-                    </ul>
-                  </div>
-                  <!-- end of item -->
-                  <!-- item -->
-                </div>
-              </li>
-              <li class="dropdownMenu">
-                Analytics
-                <div class="subMenu">
-                  <!-- item -->
-                  <div class="subMenuItem">
-                    <h5 class="text-white">Analytics Page</h5>
-                    <ul class="links">
-                      <li><a href="../Analytics/analytics.html">Link to Analytics Page</a></li>
-                    </ul>
-                  </div>
-                  <!-- end of item -->
-                  <!-- item -->
-                </div>
-              </li>
+            <div class="linksWrapper">
+              <li><a href="../Blog/blog.html">Blog</a></li>
+              <li><a href="./quiz.html">Quiz</a></li>
+              <li><a href="../Analytics/analytics.html">Analytics</a></li>
             </div>
           </div>
         </ul>
@@ -83,11 +48,10 @@
 
   </header>
 
-
   <!--main-->
   <main class="bg-black">
 
-    <form class="form-group">
+    <form class="form-group" id="myForm" action="">
 
       <section id="dataFromBlog">
         <h3>First section</h3>
@@ -112,14 +76,14 @@
       </section>
       <section>
         <h3>Number section</h3>
-        <input id="numberChoice" type="number" step="5" min="20" max="45" required />
+        <input id="numberChoice" type="number" step="5" min="20" max="45"/>
       </section>
       <section>
         <h3>Input text</h3>
-        <input id="inputText" type="text" required />
+        <input id="inputText" type="text"/>
       </section>
 
-      <button type="submit" onclick="saveData()">Submit form</button>
+      <input type="submit" id="submitForm"/>
     </form>
 
 
@@ -127,18 +91,17 @@
   <!--main-->
 
   <!--footer-->
-  <!--footer-->
   <footer class="bg-black">
 
     <div class="bg-black ml-2">
       <div class="row rowFooter">
         <div class="col-3 logo-language">
           <div class="logo_language">
-            <img class="logoFooter" src="../logo.svg" />
-            <label for="languageWrapper">
+            <h2 class="logoFooter">1UI</h2>
+            <label for="languageButton">
               Change language
             </label>
-            <div class="languageWrapper">
+            <div id="languageButton" class="languageWrapper">
               <input type="text" class="textBox" placeholder="English" readonly />
               <div class="options">
                 <div onclick="showLanguage('English')">English</div>
@@ -160,19 +123,20 @@
           </address>
         </div>
         <div class="col-6 explanations">
-          <p>* The figures stated were determined according to the measuring method (in the amended § 2 Nos. 5, 6, 6a
-            Pkw-EnVKV). The figures do not refer to a specific vehicle and are not part of the offer but are purely for
-            comparison purposes between the various types of vehicles. For more current information on individual
-            models, please contact your Porsche Centre / dealer. Determination of consumption on the basis of standard
-            equipment. Special equipment may affect fuel consumption and performance.
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec placerat ipsum et sodales faucibus. Nullam
+            sit amet blandit orci, in laoreet mauris. Vestibulum faucibus magna nec felis interdum imperdiet. Nunc
+            euismod erat sed leo porta faucibus. Nam a venenatis erat. Proin tristique finibus lectus, eget posuere arcu
+            bibendum a. Aliquam imperdiet imperdiet lorem, ut congue leo malesuada ut. Etiam sed mauris metus. Nunc a
+            magna condimentum, vulputate magna vitae, pulvinar nisi.
           </p>
-          <p>The fuel consumption and CO2 emissions of a vehicle not only depend on the efficient utilization of the
-            fuel by the vehicle, but are also influenced by driving behavior and other non-technical factors. CO2 is the
-            main greenhouse gas responsible for global.
+          <p>Morbi dictum eleifend hendrerit. Quisque eget turpis feugiat, auctor augue ac, pulvinar arcu. Nunc commodo
+            facilisis velit, nec semper nunc sodales sit amet. Suspendisse egestas lacus ut vulputate sollicitudin.
+            Nulla facilisi. Ut laoreet consectetur eleifend.
           </p>
-          <p>Further information on official fuel consumption and official specific CO2 emissions for new passenger cars
-            in the "Guidelines for Fuel consumption, CO2 emissions and energy consumption Of new passenger cars" are
-            taken, which is available free of charge at all sales outlets and at DAT.
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ut velit at ipsum bibendum ornare vel
+            molestie arcu. Donec elementum dui tortor. Fusce commodo nec purus nec auctor. Suspendisse eu gravida ex.
+            Quisque dignissim eros felis, nec lobortis tellus efficitur ac. Phasellus elementum elit et est scelerisque
+            consectetur.
           </p>
         </div>
       </div>
@@ -209,8 +173,12 @@
 
 
 
+
+
+
   </footer>
   <!--footer-->
+
 
 </body>
 <script src="../index.js"></script>

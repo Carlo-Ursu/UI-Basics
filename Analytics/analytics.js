@@ -68,6 +68,7 @@ function deleteData() {
     let result = confirm("Data will be deleted! Do you want to continue?");
     if (result) {
         displayData = "";
+        isNull = true;
         noData();
         localStorage.removeItem('submitDate');
         localStorage.removeItem('radioboxChoice');
@@ -76,8 +77,6 @@ function deleteData() {
         localStorage.removeItem('nameOfFile');
         localStorage.removeItem('numberChoice');
         localStorage.removeItem('inputText');
-        
-        console.log(analyticsData);
     }
 }
 
