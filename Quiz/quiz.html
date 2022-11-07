@@ -52,7 +52,8 @@
   <main class="bg-black">
 
     <form class="form-group" id="myForm" action="">
-
+    <div class="row">
+      <div class="col md-6">
       <section id="dataFromBlog">
         <h3>First section</h3>
       </section>
@@ -69,20 +70,23 @@
           <option value="2" name="selects">Option 2</option>
           <option value="3" name="selects">Option 3</option>
         </select>
+      </div>
       </section>
+      <div class="col md-6">
       <section>
         <h3>Insert PDF section</h3>
         <input type="file" id="pdfFile" accept=".pdf" />
       </section>
       <section>
-        <h3>Number section</h3>
+        <h3>Number section*</h3>
         <input id="numberChoice" type="number" step="5" min="20" max="45"/>
       </section>
       <section>
-        <h3>Input text</h3>
+        <h3>Input text*</h3>
         <input id="inputText" type="text"/>
       </section>
-
+    </div>
+    </div>
       <input type="submit" id="submitForm"/>
     </form>
 

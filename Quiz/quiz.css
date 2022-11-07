@@ -13,8 +13,8 @@
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
-  font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
 
 body {
@@ -38,7 +38,7 @@ header {
     margin-top: 12px;
 }
 
-.navbar > ul > li > h2 > a {
+.navbar>ul>li>h2>a {
     color: white;
     text-decoration: none;
     font-weight: normal
@@ -46,10 +46,10 @@ header {
 
 .menuWrapper {
     width: 100%;
-    display: flex; 
+    display: flex;
     justify-content: flex-end;
     height: 100%;
-    
+
 }
 
 .linksWrapper {
@@ -81,18 +81,18 @@ ul {
     font-weight: bold;
     font-size: x-large;
     padding-left: 20px;
-    
+
 }
 
-.navbar > ul > div > div > li > a:hover  {
+.navbar>ul>div>div>li>a:hover {
     color: red;
 }
 
-.navbar > ul > div > div > li > a {
+.navbar>ul>div>div>li>a {
     color: white;
     text-decoration: none;
     font-weight: normal;
-    
+
 }
 
 /*header*/
@@ -106,6 +106,44 @@ main {
     padding: 5% 7% 5% 7%;
 }
 
+form {
+    background-color: rgba(191, 186, 186, 0.475);
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0) 0%, #000000 100%);
+    box-shadow:
+        inset 1.7px 3.2px 1.4px -14px rgba(0, 0, 0, 0.265),
+        inset 3.9px 7.2px 3.1px -14px rgba(0, 0, 0, 0.344),
+        inset 6.7px 12.3px 5.3px -14px rgba(0, 0, 0, 0.393),
+        inset 10.3px 19px 8.2px -14px rgba(0, 0, 0, 0.426),
+        inset 15.2px 28.1px 12.2px -14px rgba(0, 0, 0, 0.449),
+        inset 22.3px 41.3px 17.9px -14px rgba(0, 0, 0, 0.465),
+        inset 33.5px 61.9px 26.8px -14px rgba(0, 0, 0, 0.476),
+        inset 53.4px 98.7px 42.7px -14px rgba(0, 0, 0, 0.484),
+        inset 100px 185px 80px -14px rgba(0, 0, 0, 0.5),
+        inset -1.7px -3.2px 1.4px -14px rgba(0, 0, 0, 0.265),
+        inset -3.9px -7.2px 3.1px -14px rgba(0, 0, 0, 0.344),
+        inset -6.7px -12.3px 5.3px -14px rgba(0, 0, 0, 0.393),
+        inset -10.3px -19px 8.2px -14px rgba(0, 0, 0, 0.426),
+        inset -15.2px -28.1px 12.2px -14px rgba(0, 0, 0, 0.449),
+        inset -22.3px -41.3px 17.9px -14px rgba(0, 0, 0, 0.465),
+        inset -33.5px -61.9px 26.8px -14px rgba(0, 0, 0, 0.476),
+        inset -53.4px -98.7px 42.7px -14px rgba(0, 0, 0, 0.484),
+        inset -100px -185px 80px -14px rgba(0, 0, 0, 0.5);
+
+}
+
+section {
+    width: 100%;
+    padding-top: 2%;
+    height: auto;
+    min-width: 300px;
+}
+
+#submitForm {
+    margin-top: 10%;
+    margin-left: 43%;
+    margin-bottom: 5%;
+    padding: 2%;
+}
 
 
 /*main*/
@@ -116,7 +154,6 @@ main {
 footer {
     width: 100%;
     height: auto;
-
 }
 
 .ml-2 {
@@ -133,7 +170,7 @@ footer {
     justify-content: space-around;
 }
 
-.footerWrapper{
+.footerWrapper {
     width: 100%;
     height: auto;
     position: absolute;
@@ -179,22 +216,22 @@ footer {
     border: 1px solid white;
     padding-left: 4%;
     background-color: #000000;
-    
-   
+
+
 }
 
 .languageWrapper.active .options {
     display: block;
-    
+
 }
 
-.languageWrapper .options div{
+.languageWrapper .options div {
     width: 100%;
     cursor: pointer;
 }
 
-.languageWrapper .options div:hover{
-    color: red; 
+.languageWrapper .options div:hover {
+    color: red;
     background-color: rgba(78, 76, 76, 0);
 }
 
@@ -223,7 +260,8 @@ label {
     font-size: large;
 }
 
-.info, .explanations {
+.info,
+.explanations {
     color: rgb(151, 154, 151);
     font-size: small;
 }
@@ -256,12 +294,12 @@ label {
 
 }
 
-.rightSide > p {
+.rightSide>p {
     font-weight: bold;
     padding-left: 1%;
 }
 
-.rightSide > p:hover {
+.rightSide>p:hover {
     color: red;
     cursor: pointer;
 }
@@ -270,45 +308,48 @@ label {
 
 /*footer*/
 
-@media only screen and (max-width: 1360px){
+@media only screen and (max-width: 1360px) {
     .leftSide {
         width: 40%;
     }
 }
 
-@media only screen and (max-width: 1300px){
-    .logoFooter{
+@media only screen and (max-width: 1300px) {
+    .logoFooter {
         width: 90%;
     }
-    
+
     .rowFooter {
         display: flex;
         flex-direction: column;
         width: 2000px;
     }
+
     .languageWrapper {
         margin-bottom: 5%;
         width: 40%;
     }
+
     .logoFooter {
         width: 40%;
     }
 }
 
-@media only screen and (max-width: 1130px)
-
-{
+@media only screen and (max-width: 1130px) {
     .rightSide {
         display: flex;
         flex-wrap: wrap;
         justify-content: flex-start;
     }
+
     .logoFooter {
         width: 70%;
     }
+
     .languageWrapper {
         width: 50%;
     }
+
     .logoFooter {
         width: 50%;
     }
@@ -328,13 +369,14 @@ label {
         margin-bottom: 5%;
         width: 50%;
     }
+
     .logoFooter {
         width: 50%;
     }
 
 }
 
-@media only screen and (max-width: 960px){
+@media only screen and (max-width: 960px) {
     .leftSide {
         width: 50%;
     }
@@ -344,15 +386,17 @@ label {
         flex-direction: column;
         width: 1450px;
     }
+
     .logoFooter {
         width: 70%;
     }
 }
+
 @media only screen and (max-width: 900px) {
     .lowerFooterText {
         display: block;
     }
-    
+
     .rightSide {
         width: 100%;
     }
@@ -362,12 +406,13 @@ label {
         flex-direction: column;
         width: 1400px;
     }
-}  
+}
+
 @media only screen and (max-width: 830px) {
     .lowerFooterText {
         display: block;
     }
-    
+
     .rightSide {
         width: 100%;
     }
@@ -377,26 +422,28 @@ label {
         flex-direction: column;
         width: 1300px;
     }
+
     .logoFooter {
         width: 70%;
     }
 }
 
 @media only screen and (max-width: 700px) {
-    .menuWrapper{
+    .menuWrapper {
         cursor: pointer;
     }
-    
-    .linksWrapper { 
+
+    .linksWrapper {
         font-size: larger;
-        display: none   ;
+        display: none;
         margin-top: 3%;
         padding-right: 3%;
         text-align: right;
         z-index: 2;
     }
 
-    .menuWrapper::before{
+
+    .menuWrapper::before {
         position: absolute;
         content: '';
         cursor: pointer;
@@ -409,12 +456,12 @@ label {
         transition: 0.3s;
         z-index: 10000;
     }
-       
+
     .navbar ul li:hover {
         color: red;
         cursor: pointer;
     }
-    
+
     .menuWrapper.active .linksWrapper {
         display: block;
     }
@@ -422,7 +469,7 @@ label {
     label {
         margin-top: 5%;
     }
-    
+
     .logo_language {
         margin-bottom: 12%;
     }
@@ -435,6 +482,7 @@ label {
     .rowFooter {
         width: 850px;
     }
+
     .logoFooter {
         width: 80%;
     }
