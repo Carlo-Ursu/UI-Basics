@@ -1,10 +1,19 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url(./font/Roboto/Roboto-Thin.ttf);
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url(./font/Roboto/Roboto-Bold.ttf);
+    font-weight: bold;
+}
+
 *,
 *::before,
 *::after {
     box-sizing: border-box;
-}
-
-* {
     font-family: 'Roboto', sans-serif;
 }
 
@@ -383,8 +392,9 @@ label {
     }
 
     .linksWrapper {
+        font-size: larger;
         display: none;
-        margin-top: 15%;
+        margin-top: 3%;
         padding-right: 3%;
         text-align: right;
         z-index: 2;

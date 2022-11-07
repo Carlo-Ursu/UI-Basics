@@ -1,11 +1,20 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url(./font/Roboto/Roboto-Thin.ttf);
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url(./font/Roboto/Roboto-Bold.ttf);
+    font-weight: bold;
+}
+
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
-}
-
-*{
-    font-family: 'Roboto', sans-serif;
+  box-sizing: border-box; 
+  font-family: 'Roboto', sans-serif;
 }
 
 body {
@@ -377,8 +386,10 @@ label {
     }
     
     .linksWrapper { 
-        display: none   ;
-        margin-top: 15%;
+
+        font-size: larger;
+        display: none;
+        margin-top: 3%;
         padding-right: 3%;
         text-align: right;
         z-index: 2;
@@ -407,6 +418,9 @@ label {
         display: block;
     }
 
+    main {
+        padding: 22% 7% 5% 7%;
+    }
 
     label {
         margin-top: 5%;
