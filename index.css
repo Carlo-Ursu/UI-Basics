@@ -1,15 +1,3 @@
-@font-face {
-    font-family: 'Roboto';
-    src: url(./font/Roboto/Roboto-Thin.ttf);
-    font-weight: normal;
-}
-
-@font-face {
-    font-family: 'Roboto';
-    src: url(./font/Roboto/Roboto-Bold.ttf);
-    font-weight: bold;
-}
-
 *,
 *::before,
 *::after {
@@ -24,7 +12,10 @@ body {
     width: 100%;
 }
 
-/*header*/
+/*
+header
+*/
+
 header {
     width: 100%;
     height: 100%;
@@ -60,7 +51,6 @@ header {
     font-weight: 500;
     padding-right: 20%;
     text-align: center;
-    height: 100%;
     display: flex;
     gap: 20%;
     height: 4vh;
@@ -80,9 +70,14 @@ ul {
 }
 
 .dropdownMenu {
-    font-weight: bold;
+    font-weight: 500;
     font-size: x-large;
     padding-left: 20px;
+}
+.navbar > ul > li > h2 > a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
 }
 
 .navbar > ul > div > div > li > a:hover  {
@@ -92,15 +87,21 @@ ul {
 .navbar > ul > div > div > li > a {
     color: white;
     text-decoration: none;
-    font-weight: bold;
+    font-weight: 500;
     
 }
 
-/*header*/
+/*
+main
+*/
 
+/*
+indexMain
+*/
 
-
-/*main*/
+.indexMain {
+    padding: 0;
+}
 
 .homePic {
     background-image: linear-gradient(-180deg,rgba(0, 0, 0, 0) 0%,#000000 100%);
@@ -108,7 +109,7 @@ ul {
     height: 100%;
     box-sizing: border-box;
     position: relative;
-    font-weight: bold;
+    font-weight: 500;
     
 }
 
@@ -141,7 +142,7 @@ ul {
 }
 
 .picCaption > h2 {
-    font-weight: bolder;
+    font-weight: 500;
 }
 
 .quote {
@@ -149,7 +150,7 @@ ul {
     font-size: xx-large;
     margin-left: 7%;
     margin-bottom: 3%;
-    font-weight: bold;
+    font-weight: 500;
 }
 
 section {
@@ -187,7 +188,7 @@ section {
 }
 
 .ml-1 > h2 {
-    font-weight: bolder;
+    font-weight: 500;
     margin-bottom: 4%;
 }
 
@@ -197,7 +198,7 @@ section {
 
 .colHeader {
     text-align: center;
-    font-weight: bold;
+    font-weight: 500;
 }
 
 .colContent {
@@ -253,10 +254,60 @@ section {
     -webkit-transform: rotate(-45deg);
 } 
 
-/*main*/
+main {
+    padding: 5% 7% 5% 7%;
+}
 
+/*
+blogMain
+*/
 
-/*footer*/
+/*
+quizMain
+*/
+
+form {
+    background-color: rgba(191, 186, 186, 0.475);
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0) 0%, #000000 100%);
+    box-shadow:
+        inset 1.7px 3.2px 1.4px -14px rgba(0, 0, 0, 0.265),
+        inset 3.9px 7.2px 3.1px -14px rgba(0, 0, 0, 0.344),
+        inset 6.7px 12.3px 5.3px -14px rgba(0, 0, 0, 0.393),
+        inset 10.3px 19px 8.2px -14px rgba(0, 0, 0, 0.426),
+        inset 15.2px 28.1px 12.2px -14px rgba(0, 0, 0, 0.449),
+        inset 22.3px 41.3px 17.9px -14px rgba(0, 0, 0, 0.465),
+        inset 33.5px 61.9px 26.8px -14px rgba(0, 0, 0, 0.476),
+        inset 53.4px 98.7px 42.7px -14px rgba(0, 0, 0, 0.484),
+        inset 100px 185px 80px -14px rgba(0, 0, 0, 0.5),
+        inset -1.7px -3.2px 1.4px -14px rgba(0, 0, 0, 0.265),
+        inset -3.9px -7.2px 3.1px -14px rgba(0, 0, 0, 0.344),
+        inset -6.7px -12.3px 5.3px -14px rgba(0, 0, 0, 0.393),
+        inset -10.3px -19px 8.2px -14px rgba(0, 0, 0, 0.426),
+        inset -15.2px -28.1px 12.2px -14px rgba(0, 0, 0, 0.449),
+        inset -22.3px -41.3px 17.9px -14px rgba(0, 0, 0, 0.465),
+        inset -33.5px -61.9px 26.8px -14px rgba(0, 0, 0, 0.476),
+        inset -53.4px -98.7px 42.7px -14px rgba(0, 0, 0, 0.484),
+        inset -100px -185px 80px -14px rgba(0, 0, 0, 0.5);
+
+}
+
+section {
+    width: 100%;
+    padding-top: 2%;
+    height: auto;
+    min-width: 300px;
+}
+
+#submitForm {
+    margin-top: 10%;
+    margin-left: 43%;
+    margin-bottom: 5%;
+    padding: 2%;
+}
+
+/*
+footer
+*/
 
 footer {
     width: 100%;
@@ -292,6 +343,7 @@ footer {
 .logoFooter {
     width: 60%;
     height: auto;
+    font-weight: 500;
 }
 
 .languageWrapper {
@@ -402,7 +454,7 @@ label {
 }
 
 .rightSide > p {
-    font-weight: bold;
+    font-weight: 500;
     padding-left: 1%;
 }
 
@@ -411,13 +463,9 @@ label {
     cursor: pointer;
 }
 
-
-
-/*footer*/
-
-/*media-queries*/
-
-
+/*
+media-queries
+*/
 
 @media only screen and (max-width: 1360px){
     .leftSide {
@@ -571,6 +619,9 @@ label {
 
     .quote {
         width: 85%;
+    }
+    .blogMain {
+        padding: 22% 7% 5% 7%;
     }
 
     label {
