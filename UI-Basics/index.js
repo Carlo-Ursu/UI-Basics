@@ -1,13 +1,12 @@
 //all pages
 //if there is no language selected, choose English by default
-let localLanguage = localStorage.getItem('language');
 
 if (localStorage.getItem('language') == null) {
     localStorage.setItem('language', 'English');
 }
 
-if (localLanguage != null) {
-    document.querySelector('.textBox').value = localLanguage;
+if (localStorage.getItem('language') != null) {
+    document.querySelector('.textBox').value = localStorage.getItem('language');
 }
 //when we click, dropdown is displayed and we can select from it
 let menuDropdown = document.querySelector('.menuWrapper');
